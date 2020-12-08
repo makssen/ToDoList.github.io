@@ -11,7 +11,7 @@ const addTodo = (event) => {
         const date = new Date();
         let dd = date.getDate() < 10 ? 0 : '';
         let mm = date.getMinutes() < 10 ? 0 : '';
-        let time = `${dd}${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()} ${date.getHours() + 1}:${mm}${date.getMinutes()}`;
+        let time = `${dd}${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()} ${date.getHours()}:${mm}${date.getMinutes()}`;
 
         const todoDiv = document.createElement('div');
         todoDiv.classList.add('todo');
